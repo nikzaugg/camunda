@@ -1,0 +1,27 @@
+<strong>Arbeitszeit erfassen</strong>
+
+<form class="form-horizontal">
+  <div class="control-group">
+    <label class="control-label">Dein Name</label>
+    <div class="controls">
+      <input type="text" 
+             cam-variable-name="name"
+             cam-variable-type="String"
+             required
+             class="form-control" />
+    </div>
+  <div class="control-group">
+    <label class="control-label">Arbeitszeit heute</label>
+    <div class="controls">
+      <input type="text" 
+             cam-variable-name="time"
+             cam-variable-type="Double"
+             required
+             class="form-control" />
+    </div>
+  </div>
+
+  <script cam-script type="text/form-script">
+  // custom JavaScript goes here
+  </script>
+</form>
