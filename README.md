@@ -43,27 +43,31 @@ This is a maven project.
 We need to add a second Network Adapter to the VM in order to access the Odoo-VM which will serve as our Odoo-Server.
 After this setup you will be able to access the VM via your own browser.
 
-1. Click on Global Tools on the top-right
-2. Click 'Create'
-3. Configure Addresses
+1. Click on 'Global Tools' on the top-right
+2. Click 'Host-only Networks'
+3. Click 'Create' (a new adapter will be created)
+4. Select the new adapter and click 'Properties'
+5. Configure Addresses (tab 'Adapter')
 
 | Adapter      |   IP      | 
 | -------------|-----------| 
 | IPv4 Address | 192.168.56.1 |
 | IPv4 Network Address  | 255.255.255.0  |  
 
-4.  Enable DHCP Server
+6.  Enable DHCP Server (tab 'DGCP-Server')
 
 | DHCP        |   IP      | 
 | ------------- |:-------------:| 
 | Server Address      | 192.168.56.1 |
 | Server Mask      | 255.255.255.0      | 
 | Lower Address Bound      | 192.168.56.101 | 
-| Upper Address Bound      | 192.168.56.254 | 
+| Upper Address Bound      | 192.168.56.254 |
 
-5. Right-click on your machine -> 'Preferences' -> 'Network' -> 'Adapter2'
-6. Select previously added Adapter and press 'OK'
-7. Start up your virtual Image
+7. Click 'Save'
+8. Click on 'VM-Tools' on the top-right
+9. Right-click on your machine -> 'Preferences' -> 'Network' -> 'Adapter2'
+10. Select previously added Adapter and press 'OK'
+11. Start up your virtual Image
 
 #### Inside the Virtual Machine
 1. Open Terminal
@@ -79,6 +83,7 @@ After this setup you will be able to access the VM via your own browser.
 1. Open Browser
 2. Open http://192.168.56.101:8069
 3. You should see the Odoo login screen
+4. Enter 'wi2017' for both user name and password
 
 ## Initial Description by Peter Heinrich
 Dieses Projekt stellt eine einfache Umgebung zur verfügung um die Welt von Camunda zu erkunden.
