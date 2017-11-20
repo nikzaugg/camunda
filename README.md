@@ -26,7 +26,7 @@ This is a maven project.
 
 ### Open H2 Database
 1. Navigate to localhost:8080/console
-2. At JDBC enter `paht\to\repository\camunda\uzh-wi2`
+2. At JDBC enter `paht\to\repository\camunda\uzh-wi2` (e.g. `jdbc:h2:~/OneDrive/` points to `C:/Users/Alex/OneDrive/`)
 3. Enter 'sa' for both user name and password
 4. Connect to DB
 5. Check if data was stored in table 'TIME_RECORD'
