@@ -68,6 +68,7 @@ After this setup you will be able to access the VM via your own browser.
 9. Right-click on your machine -> 'Preferences' -> 'Network' -> 'Adapter2'
 10. Select previously added Adapter and press 'OK'
 11. Start up your virtual Image
+12. Enter 'wi2017' for both user name and password
 
 #### Inside the Virtual Machine
 1. Open Terminal
@@ -83,7 +84,7 @@ After this setup you will be able to access the VM via your own browser.
 1. Open Browser
 2. Open http://192.168.56.101:8069
 3. You should see the Odoo login screen
-4. Enter 'wi2017' for both user name and password
+4. Enter 'demo' for both user name and password
 
 ## Initial Description by Peter Heinrich
 Dieses Projekt stellt eine einfache Umgebung zur verfügung um die Welt von Camunda zu erkunden.
