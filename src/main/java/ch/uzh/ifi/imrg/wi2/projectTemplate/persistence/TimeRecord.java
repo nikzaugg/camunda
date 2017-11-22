@@ -13,6 +13,7 @@ public class TimeRecord {
     
     private String name;
     private Double time;
+    private boolean approved ;
 
     public Long getId() {
         return id;
@@ -37,6 +38,9 @@ public class TimeRecord {
     public void setTime(Double time) {
         this.time = time;
     }
-    
+
+    public void setApproved(boolean bool){this.approved = bool; }
+
+    public boolean isApproved(){return this.approved; }
     
 }
