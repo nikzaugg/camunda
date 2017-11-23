@@ -7,6 +7,8 @@ All data is stored in a SQL-Database
 ## Project
 This is a maven project.
 
+Oracle Virtual Box: 5.2.0
+
 ### How to run
 1. clone repo
 2. Open IntelliJ
