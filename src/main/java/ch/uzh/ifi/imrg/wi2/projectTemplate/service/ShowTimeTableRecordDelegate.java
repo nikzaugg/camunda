@@ -1,6 +1,5 @@
 package ch.uzh.ifi.imrg.wi2.projectTemplate.service;
 
-import ch.uzh.ifi.imrg.wi2.projectTemplate.persistence.TimeRecord;
 import ch.uzh.ifi.imrg.wi2.projectTemplate.repository.TimeRecordRepository;
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;
@@ -16,14 +15,9 @@ public class ShowTimeTableRecordDelegate implements JavaDelegate {
     TimeRecordRepository repo;
     
     @Override
-    public void execute(DelegateExecution de) throws Exception {
-        TimeRecord tr = new TimeRecord();
-        tr.setName((String)de.getVariable("name"));
-        tr.setTime((Double)de.getVariable("time"));
-        tr.setApproved(false);
-        repo.save(tr);
-        System.out.println(de);
-        System.out.println("Stored!");
+    public void execute(DelegateExecution execution) throws Exception {
+        String name = (String) execution.getVariable("name");
+        Double time = (Double) execution.getVariable("time");
     }
     
 }
