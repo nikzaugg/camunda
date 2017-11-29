@@ -1,0 +1,27 @@
+<form name="approveLoan">
+  <div class="form-group">
+    <label class="control-label">Mitarbeiter</label>
+    <input class="form-control"
+           cam-variable-type="String"
+           cam-variable-name="name"
+           name="customerId"
+           readonly="true" />
+  </div>
+  <div class="form-group">
+    <label class="control-label">Dauer</label>
+    <input class="form-control"
+           cam-variable-type="Double"
+           cam-variable-name="time"
+           name ="time" />
+  </div>
+  <div class="control-group">
+    <label class="control-label">Zeiterfassung bestätigen</label>
+    <div class="controls">
+      <input type="text"
+             cam-variable-name="approved"
+             cam-variable-type="Boolean"
+             required
+             class="form-control" />
+    </div>
+  </div>
+</form>

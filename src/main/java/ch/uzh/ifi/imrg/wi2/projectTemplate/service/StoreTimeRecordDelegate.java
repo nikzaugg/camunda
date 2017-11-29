@@ -21,7 +21,6 @@ public class StoreTimeRecordDelegate implements JavaDelegate {
         tr.setTime((Double)de.getVariable("time"));
         tr.setApproved(false);
         repo.save(tr);
-        System.out.println(de);
         System.out.println("Stored!");
     }
     
