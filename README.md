@@ -7,6 +7,8 @@ All data is stored in a SQL-Database
 ## Project
 This is a maven project.
 
+Oracle Virtual Box: 5.2.0
+
 ### How to run
 1. clone repo
 2. Open IntelliJ
@@ -84,7 +86,8 @@ After this setup you will be able to access the VM via your own browser.
 1. Open Browser
 2. Open http://192.168.56.101:8069
 3. You should see the Odoo login screen
-4. Enter 'demo' for both user name and password
+4. Create new data base with your own credentials for a clean environment (or follow step 5) 
+5. Enter 'demo' for both user name and password
 
 ## Initial Description by Peter Heinrich
 Dieses Projekt stellt eine einfache Umgebung zur verfügung um die Welt von Camunda zu erkunden.
