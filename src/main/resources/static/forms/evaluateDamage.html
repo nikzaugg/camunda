@@ -1,0 +1,22 @@
+<strong>Schadenfall des Kunden beurteilen</strong>
+
+<form class="form-horizontal">
+  <label class="control-label">Name des Kunden</label>
+  <div class="controls">
+    <input type="text"
+           cam-variable-name="customerName"
+           cam-variable-type="String"
+           required
+           class="form-control" />
+  </div>
+
+  <div class="control-group">
+    <label class="control-label">Selbstverursacht?</label>
+    <div class="controls">
+      <input type="checkbox"
+             cam-variable-name="isCustomerFault"
+             cam-variable-type="Boolean"
+             class="form-control" />
+    </div>
+  </div>
+</form>
