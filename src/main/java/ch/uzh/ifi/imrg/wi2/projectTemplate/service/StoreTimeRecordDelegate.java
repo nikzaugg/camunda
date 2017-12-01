@@ -19,7 +19,6 @@ public class StoreTimeRecordDelegate implements JavaDelegate {
         TimeRecord tr = new TimeRecord();
         tr.setName((String)de.getVariable("name"));
         tr.setTime((Double)de.getVariable("time"));
-        tr.setApproved(false);
         repo.save(tr);
         System.out.println("Stored!");
     }
