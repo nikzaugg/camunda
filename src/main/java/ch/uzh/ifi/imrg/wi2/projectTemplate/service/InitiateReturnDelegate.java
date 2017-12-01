@@ -6,11 +6,11 @@ import org.camunda.bpm.engine.delegate.JavaDelegate;
 import javax.inject.Named;
 
 
-@Named("createOfferingDelegate")
-public class CreateOfferingDelegate implements JavaDelegate {
+@Named("initiateReturnDelegate")
+public class InitiateReturnDelegate implements JavaDelegate {
 
     @Override
     public void execute(DelegateExecution delegate) throws Exception {
-        System.out.println("CreateOfferingDelegate");
+        System.out.println("initiateReturnDelegate");
     }
 }
