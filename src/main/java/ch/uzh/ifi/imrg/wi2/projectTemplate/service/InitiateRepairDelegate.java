@@ -11,6 +11,6 @@ public class InitiateRepairDelegate implements JavaDelegate {
 
     @Override
     public void execute(DelegateExecution delegate) throws Exception {
-        System.out.println("InitiateRepairDelegate");
+        System.out.println("Prozessschritt: Reparatur wird ausgeführt!");
     }
 }

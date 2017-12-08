@@ -11,6 +11,6 @@ public class SendInvoiceDelegate implements JavaDelegate {
 
     @Override
     public void execute(DelegateExecution delegate) throws Exception {
-        System.out.println("sendInvoiceDelegate");
+        System.out.println("Prozessschritt: Rechnung an Kunden gesendet.");
     }
 }

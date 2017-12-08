@@ -11,6 +11,6 @@ public class InitiateReturnDelegate implements JavaDelegate {
 
     @Override
     public void execute(DelegateExecution delegate) throws Exception {
-        System.out.println("initiateReturnDelegate");
+        System.out.println("Prozessschritt: Rücksendung an Kunden gestartet.");
     }
 }

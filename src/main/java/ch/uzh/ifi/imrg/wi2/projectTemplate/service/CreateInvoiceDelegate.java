@@ -11,6 +11,6 @@ public class CreateInvoiceDelegate implements JavaDelegate {
 
     @Override
     public void execute(DelegateExecution delegate) throws Exception {
-        System.out.println("createInvoiceDelegate");
+        System.out.println("Prozessschritt: Rechnung erstellt.");
     }
 }
